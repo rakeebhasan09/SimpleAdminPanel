@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main class="container">
+		<main class="main-container">
 			<!-- Data Input Form -->
 			<div class="data-collection-form">
 				<h2>Insert New Data</h2>
@@ -41,7 +41,7 @@
 						aria-label="Default select example"
 						id="roal"
 					>
-						<option value="">Select Employee Roal</option>
+						<option value="" selected>Select Employee Roal</option>
 						<option value="CEO">CEO</option>
 						<option value="MD">MD</option>
 						<option value="Admin">Admin</option>
@@ -56,6 +56,24 @@
 					<button onclick="addNewEmployee()" class="add-btn">
 						Add Employee
 					</button>
+				</div>
+			</div>
+
+			<!-- Data Display Table -->
+			<div class="data-display-table">
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Employee Name</th>
+								<th>Employee E-mail</th>
+								<th>Employee Phone</th>
+								<th>Employee Roal</th>
+								<th>Employee Address</th>
+							</tr>
+						</thead>
+						<tbody id="tbody"></tbody>
+					</table>
 				</div>
 			</div>
 		</main>

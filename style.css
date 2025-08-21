@@ -4,8 +4,14 @@
 	box-sizing: border-box;
 }
 
+.main-container {
+	padding: 0 50px;
+	display: flex;
+	gap: 30px;
+}
+
 .data-collection-form {
-	max-width: 800px;
+	width: 30%;
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
@@ -13,6 +19,10 @@
 	padding-bottom: 50px;
 	border-radius: 15px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.data-display-table {
+	width: 70%;
 }
 
 .data-collection-form h2 {
@@ -59,4 +69,35 @@
 	padding: 15px;
 	border: none;
 	border-radius: 5px;
+}
+
+.data-display-table {
+	padding-top: 30px;
+}
+
+#tbody tr td,
+thead tr th {
+	padding: 10px 20px !important;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 992px) {
+	.data-collection-form {
+		width: 40%;
+	}
+	.data-display-table {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-container {
+		flex-direction: column;
+		padding: 0 20px;
+	}
+
+	.data-collection-form,
+	.data-display-table {
+		width: 100%;
+	}
 }
