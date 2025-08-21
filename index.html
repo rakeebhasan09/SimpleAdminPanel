@@ -4,9 +4,41 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Try To Create An Admin Panel Using JavaScript</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<main class="main-container"></main>
+		<main class="container">
+			<!-- Data Input Form -->
+			<div class="data-collection-form">
+				<h2>Insert New Data</h2>
+				<div class="form">
+					<input type="text" placeholder="Type Employee Name" />
+					<input type="email" placeholder="Type Employee E-mail" />
+					<input type="text" placeholder="Type Employee Phone" />
+					<input type="text" placeholder="Type Employee Address" />
+					<select
+						class="form-select"
+						aria-label="Default select example"
+					>
+						<option selected>Select Employee Roal</option>
+						<option value="CEO">CEO</option>
+						<option value="MD">MD</option>
+						<option value="Admin">Admin</option>
+						<option value="Front End Developer">
+							Front End Developer
+						</option>
+						<option value="Back End Developer">
+							Back End Developer
+						</option>
+						<option value="Contributor">Contributor</option>
+					</select>
+					<button class="add-btn">Add Employee</button>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
