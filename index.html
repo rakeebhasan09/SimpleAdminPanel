@@ -16,15 +16,32 @@
 			<div class="data-collection-form">
 				<h2>Insert New Data</h2>
 				<div class="form">
-					<input type="text" placeholder="Type Employee Name" />
-					<input type="email" placeholder="Type Employee E-mail" />
-					<input type="text" placeholder="Type Employee Phone" />
-					<input type="text" placeholder="Type Employee Address" />
+					<input
+						id="name"
+						type="text"
+						placeholder="Type Employee Name"
+					/>
+					<input
+						id="email"
+						type="email"
+						placeholder="Type Employee E-mail"
+					/>
+					<input
+						id="phone"
+						type="text"
+						placeholder="Type Employee Phone"
+					/>
+					<input
+						id="address"
+						type="text"
+						placeholder="Type Employee Address"
+					/>
 					<select
 						class="form-select"
 						aria-label="Default select example"
+						id="roal"
 					>
-						<option selected>Select Employee Roal</option>
+						<option value="">Select Employee Roal</option>
 						<option value="CEO">CEO</option>
 						<option value="MD">MD</option>
 						<option value="Admin">Admin</option>
@@ -36,9 +53,12 @@
 						</option>
 						<option value="Contributor">Contributor</option>
 					</select>
-					<button class="add-btn">Add Employee</button>
+					<button onclick="addNewEmployee()" class="add-btn">
+						Add Employee
+					</button>
 				</div>
 			</div>
 		</main>
+		<script src="./index.js"></script>
 	</body>
 </html>
